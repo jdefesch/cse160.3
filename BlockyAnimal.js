@@ -325,8 +325,8 @@ const makeEventListeners = () => {
         g_isAnimationRunning = g_isAnimationRunning === 1 ? 2 : 1
     }
 
-    const enableAnimation = () => g_isAnimationRunning = true
-    const disableAnimation = () => g_isAnimationRunning = false
+    const enableAnimation = () => g_isAnimationRunning = 1
+    const disableAnimation = () => g_isAnimationRunning = 0
 
     // canvas.onmousedown = handleMouseDown;
     // canvas.onmouseup = handleMouseUp;
